@@ -1,4 +1,4 @@
-# Brute Force Detection Utility
+# Brute Force Detector
 
 ## Overview
 This Python utility simulates a rudimentary threat detection engine. It ingests a chronological list of mock authentication events and scans for consecutive failures. If the streak breaches a predefined threshold, the script generates an automated alert pinpointing the location of the anomaly in the log sequence.
