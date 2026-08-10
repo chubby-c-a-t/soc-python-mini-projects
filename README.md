@@ -16,3 +16,4 @@ The utilities are categorised by their primary operational function:
 
 * **`/network-containment`**: Scripts for validating, sorting, and sanitising network indicators (like IP addresses) for firewall blocklists.
 * **`/threat-detection`**: Scripts for scanning logs for possible IoC or ongoing attack.
+* **`/log-triage`**: Scripts for parsing events based on severity and operational hierarchy.
