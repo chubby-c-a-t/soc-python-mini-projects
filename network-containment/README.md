@@ -20,4 +20,4 @@ This utility simulates processing a chronological queue of these actions. It ing
 
 ## Technical Highlights
 * **List Mutation:** Utilises core Python list methods (`.copy()`, `.remove()`, `.pop()`) to dynamically alter data structures while preserving the integrity of the original dataset.
-* **Short-Circuit Evaluation:** Strategically orders conditional statements (e.g., checking the command type before checking the list index) to naturally prevent `IndexError` crashes when handling single-item commands like `"rollback"`.
+* **Short-Circuit Evaluation:** Strategically orders conditional statements to naturally prevent `IndexError` crashes when handling single-item commands like `"rollback"`.
