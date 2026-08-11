@@ -1,7 +1,7 @@
 # SOC Python Mini-Projects
 
 ## Overview: The Primary Goal
-This repository documents my journey in mastering Python fundamentals, specifically applied through the lens of a Level 1 SOC Analyst. 
+This repository documents my progression towards mastering Python fundamentals, applied through the lens of a SOC Analyst.
 
 While the scripts here simulate real-world SOC tasks like parsing security logs and sanitising data the main purpose of this repository's existence is to build and solidify my core programming muscle memory. Rather than building feature-complete applications, I am focusing on small, single-purpose utilities that execute exactly one function efficiently.
 
