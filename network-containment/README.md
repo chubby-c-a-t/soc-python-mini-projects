@@ -14,7 +14,7 @@ This simple Python utility is designed to solve that problem. It ingests a raw l
 # Active Blocklist Manager
 
 ## Overview
-SOC analysts frequently receive streams of automated firewall commands—whether from a SOAR platform, a ticketing system, or a senior analyst—dictating which IPs need to be blocked or cleared. 
+SOC analysts frequently receive streams of automated firewall commands—whether from a SOAR platform, a ticketing system, or a senior analyst dictating which IPs need to be blocked or cleared. 
 
 This utility simulates processing a chronological queue of these actions. It ingests an initial state, reads a list of operational commands, and dynamically updates the active blocklist. It supports blocking new threats, unblocking, and rolling back the most recent change.
 
