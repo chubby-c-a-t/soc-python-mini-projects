@@ -21,3 +21,13 @@ This utility simulates processing a chronological queue of these actions. It ing
 ## Technical Highlights
 * **List Mutation:** Utilises core Python list methods (`.copy()`, `.remove()`, `.pop()`) to dynamically alter data structures while preserving the integrity of the original dataset.
 * **Short-Circuit Evaluation:** Strategically orders conditional statements to naturally prevent `IndexError` crashes when handling single-item commands like `"rollback"`.
+
+# Suspicious Login Pairing Detector
+
+## Overview
+This Python utility safely extracts unique user-to-IP relationships from chronological logs, cross-referencing each new pairing against a threat feed to flag malicious infrastructure.
+
+## Technical Highlights
+* **State Tracking:** Utilises a Python `set` to monitor seen login pairings, inherently guaranteeing uniqueness to deduplicate data without complex loops.
+* **High-Speed Lookups:** Employs a `set` for the active threat feed, allowing for highly efficient membership testing (`in` keyword) during log triage.
+* **Relational Mapping:** Uses Python f-strings to concatenate the username and IP address into a single tracking variable for contextual analysis.

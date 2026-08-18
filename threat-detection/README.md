@@ -18,13 +18,3 @@ This utility safely correlates parallel arrays, isolating unmatched leftovers be
 ## Technical Highlights
 * **Safe Boundaries:** Utilises `min()` to dynamically calculate the safe iteration limit for lists of unequal lengths, completely preventing `IndexError` crashes.
 * **List Slicing:** Extracts and preserves orphaned data using slice notation (`[:]`) so no logs are dropped during triage.
-
-# Suspicious Login Pairing Detector
-
-## Overview
-This Python utility safely extracts unique user-to-IP relationships from chronological logs, cross-referencing each new pairing against a threat feed to flag malicious infrastructure.
-
-## Technical Highlights
-* **State Tracking:** Utilises a Python `set` to monitor seen login pairings, inherently guaranteeing uniqueness to deduplicate data without complex loops.
-* **High-Speed Lookups:** Employs a `set` for the active threat feed, allowing for highly efficient membership testing (`in` keyword) during log triage.
-* **Relational Mapping:** Uses Python f-strings to concatenate the username and IP address into a single tracking variable for contextual analysis.
