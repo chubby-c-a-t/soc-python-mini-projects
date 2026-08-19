@@ -28,3 +28,12 @@ This Python utility safely extracts unique user-to-IP relationships from chronol
 * **State Tracking:** Utilises a Python `set` to monitor seen login pairings, inherently guaranteeing uniqueness to deduplicate data without complex loops.
 * **High-Speed Lookups:** Employs a `set` for the active threat feed, allowing for highly efficient membership testing (`in` keyword) during log triage.
 * **Relational Mapping:** Uses Python f-strings to concatenate the username and IP address into a single tracking variable for contextual analysis.
+
+# IP Threat Correlator
+
+## Overview
+This utility ingests a list of active IPs and a list of known malicious IPs, using sets to efficiently identify malicious IPs interacting with the network.
+
+## Technical Highlights
+* **Set Intersection:** Utilises the Python `&` operator to mathematically compare two datasets, efficiently extracting overlapping values.
+* **Data Sanitisation:** Automatically converts raw list inputs into sets, silently stripping duplicate connection logs before processing.
