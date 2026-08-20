@@ -21,3 +21,13 @@ This utility simulates processing a chronological queue of these actions. It ing
 ## Technical Highlights
 * **List Mutation:** Utilises core Python list methods (`.copy()`, `.remove()`, `.pop()`) to dynamically alter data structures while preserving the integrity of the original dataset.
 * **Short-Circuit Evaluation:** Strategically orders conditional statements to naturally prevent `IndexError` crashes when handling single-item commands like `"rollback"`.
+
+# Numerical IP Sanitiser
+
+## Overview
+Python sorting methods arrange IP addresses alphabetically, which places `10.0.0.100` before `10.0.0.2`. This utility deduplicates a raw list of IP addresses and utilises standard library modules to sort them by proper numerical network boundaries, generating a clean, human-readable list.
+
+## Technical Highlights
+* **Standard Libraries:** Imports the `ipaddress` module to mathematically evaluate and handle IPv4 structures.
+* **Advanced Sorting:** Utilises the `key` parameter within the `sorted()` function to alter default iteration behaviour.
+* **Deduplication:** Casts data to a set for efficient dedup before sorting.
