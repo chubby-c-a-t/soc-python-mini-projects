@@ -14,6 +14,6 @@ One of my goals with this repository is writing code manually from a blank file 
 ## Repository Structure
 The utilities are categorised by their primary operational function:
 
-* **`/network-containment`**: Scripts for validating, sorting, and sanitising network indicators (like IP addresses) for firewall blocklists.
-* **`/threat-detection`**: Scripts for scanning logs for possible IoC or ongoing attack.
-* **`/log-triage`**: Scripts for parsing events based on severity and operational hierarchy.
+* **`/network-containment`**: Validating, sorting, and sanitising network indicators useful for firewall blocklists.
+* **`/threat-detection`**: Scanning logs for possible IoC or ongoing attack.
+* **`/log-triage`**: Parsing events based on severity and operational hierarchy.
