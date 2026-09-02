@@ -5,13 +5,13 @@ against a known threat intelligence feed to instantly identify active breaches.
 """
 
 def find_active_threats(active_ips, threat_ips):
-    set_active_ips = set(active_ips)
-    set_threat_ips = set(threat_ips)
+    threat_set = set(threat_ips)
+    unique_active = set(active_ips)
     
-    common_ips = set_active_ips & set_threat_ips
-
-    return common_ips
-
+    # List comprehension in place of previous intersection operator
+    active_threats = [ip for ip in unique_active if ip in threat_set]
+    
+    return active_threats
 
 if __name__ == "__main__":
     current_connections = ["192.168.1.50", "10.0.0.5", "198.51.100.4", "10.0.0.5"]
