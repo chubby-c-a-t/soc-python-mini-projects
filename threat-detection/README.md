@@ -32,7 +32,7 @@ This Python utility safely extracts unique user-to-IP relationships from chronol
 # IP Threat Correlator
 
 ## Overview
-This utility cross-references active network connections against a known threat intelligence feed. It ingests arrays of IP addresses and utilizes a list comprehension to efficiently filter and flag malicious infrastructure interacting with the network.
+This utility cross-references active network connections against a known threat intelligence feed. It ingests arrays of IP addresses and utilises a list comprehension to efficiently filter and flag malicious infrastructure interacting with the network.
 
 ## Technical Highlights
 * **List Comprehensions:** Employs a single-line Pythonic filter to rapidly isolate matching indicators of compromise (IoCs), bypassing the need for nested loops or complex conditional blocks.
